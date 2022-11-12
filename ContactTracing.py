@@ -9,7 +9,7 @@ print("\t\t***BEVERLY ANN L. RODRIGUEZ***\n")
 # Search, ask full name then display the record
 
 
-fullname={}
+
 def menu(): 
     print("""
         >>>>> WELCOME TO RODRIGUEZ`S PROGRAM <<<<<
@@ -23,8 +23,17 @@ def menu():
             |_________________________________|
     """)
 
+Name = {}
+Age = {}
+Gender = {}
+Number = {}
+Email = {}
+CityAddress = {}
+
+
 def end():
     print(">>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
+
 
 menu()
 option = int(input("\t\nSELECT AN OPTION (Choose from 1-3): "))
