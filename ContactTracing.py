@@ -26,33 +26,20 @@ def menu():
 def end():
     print(">>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
 
-FullName = []
-Nickname = []
-Gender = []
-Age = []
-CityAddress = []
-CivilStatus = []
-Birthdate = []
-
 menu()
 option = int(input("\t\nSELECT AN OPTION (Choose from 1-3): "))
 
 while option != 4:
     if option == 1:
-        num = int(input("\tPlease enter the number you want to add: "))
-        Array.append(num)
-        print("\tThank you!!The element has been added.")
-        print(f"\tTHIS IS NOW THE NEW ARRAY!! = {Array}")
-       
+        print("Name: ")
+
     elif option == 2:
-        insert = int(input("Please enter the number you want to insert: "))
-        insert_idx = int(input(f"Enter the index you want to insert {insert}: "))
-        Array.insert(insert_idx, insert)
-        print("\tThank you!! The element has been inserted.")
-        print(f"\tTHIS IS NOW THE NEW ARRAY!! = {Array}")
-          
+        print()
     elif option == 10:
-        end()
+        exit = input("DO YOU WANT TO EXIT THE PROGRAM? (YES / NO)")
+        if exit == "YES":
+            break
+        print()
         break
     menu()
     option = int(input("\t\nSELECT AN OPTION (Choose from 1-10): "))
