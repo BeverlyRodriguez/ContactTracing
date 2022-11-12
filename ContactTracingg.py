@@ -20,3 +20,8 @@ def menu():
         """)
 def end():
     print(">>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
+
+    Options = int(input("\t\nSELECT AN OPTION (Choose from 1-3): "))
+    while Options != 4:
+     if Options == 1:
+        print("PLEASE ENTER YOUR PERSONAL DATA:")
