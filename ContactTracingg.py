@@ -1,29 +1,29 @@
 print("\n\t\t********PROGRAMMED BY:********")
 print("\t\t***BEVERLY ANN L. RODRIGUEZ***\n")
 
-Person1 = {"FullName": "Bebs Reyes", 
-            "Age": "19", 
-            "Gender":"Female",
-            "Number": "09283623123",
-            "Email": "beverly@gmail.com",
-            "Address": "Jalajala"}
-Person2 = {"FullName": "Jay Park", 
-            "Age": "20",
-            "Gender":"Male","Number": "09123985458",
-            "Email": "jaypark@gmail.com",
-            "Address": "Seoul"}
-Person3 = {"FullName": "Niki Rodriguez", 
-            "Age": "17", 
-            "Gender":"Male",
-            "Number": "09096937644",
-            "Email": "nikirodriguez@gmail.com",
-            "Address": "Tokyo"}
-Person4 = {"FullName": "Jake Marcus",
-            "Age": "19", 
-            "Gender":"Male",
-            "Number": "09845321473",
-            "Email": "jakemarcus@gmail.com",
-            "Address": "Makati"}
+Person1 = {"\nFullName": "Bebs Reyes", 
+            "\nAge": "19", 
+            "\nGender":"Female",
+            "\nNumber": "09283623123",
+            "\nEmail": "beverly@gmail.com",
+            "\nAddress": "Jalajala"}
+Person2 = {"\nFullName": "Jay Park", 
+            "\nAge": "20",
+            "\nGender":"Male","Number": "09123985458",
+            "\nEmail": "jaypark@gmail.com",
+            "\nAddress": "Seoul"}
+Person3 = {"\nFullName": "Niki Rodriguez", 
+            "\nAge": "17", 
+            "\nGender":"Male",
+            "\nNumber": "09096937644",
+            "\nEmail": "nikirodriguez@gmail.com",
+            "\nAddress": "Tokyo"}
+Person4 = {"\nFullName": "Jake Marcus",
+            "\nAge": "19", 
+            "\nGender":"Male",
+            "\nNumber": "09845321473",
+            "\nEmail": "jakemarcus@gmail.com",
+            "\nAddress": "Makati"}
 Informations = []
 
 
@@ -71,6 +71,10 @@ while True:
             if person["Fullname"] == Name:
                 print()
                 print(person)
+
+    elif Options == 4:   
+        for i in range(len(Informations)):
+            print(Informations[i])
     menu()
     Options = int(input("\t\nSELECT AN OPTION (Choose from 1-4): "))
         
