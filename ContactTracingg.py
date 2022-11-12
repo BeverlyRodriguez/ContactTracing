@@ -1,3 +1,5 @@
+print("\n\t\t********PROGRAMMED BY:********")
+print("\t\t***BEVERLY ANN L. RODRIGUEZ***\n")
 
 Person1 = {"FullName": "Bebs Reyes", 
             "Age": "19", 
@@ -43,7 +45,7 @@ def end():
     print(">>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
 
 
-
+menu()
 Options = int(input("\t\nSELECT AN OPTION (Choose from 1-3): "))
 
 while True:
@@ -57,20 +59,19 @@ while True:
         print("\t>>>>> INFORMATIONS ARE SAVED! <<<<<")
         person = {"Fullname": Name, "Age": Age, "Gender": Gender, "Address": CityAddress, "Number": PhoneNumber}
 
+        Informations.append(Person1)
+        Informations.append(Person2)
+        Informations.append(Person3)
+        Informations.append(Person4)
 
     elif Options == 2:
         search = input("ENTER THE NAME YOU WANT TO SEARCH: ")
-        for i in range(len(i)):
-
-            name = input("What is the name? ")
-for i in range(len(infos)):
-    user = infos[i]
-    if user["Fullname"] == name:
-        print("Satrue")
-        print(user)
-
-#viewall
-for i in range(len(infos)):
-    print(infos[i])
+        for i in range(len(Informations)):
+            person = Informations[i]
+            if person["Fullname"] == Name:
+                print()
+                print(person)
+    menu()
+    Options = int(input("\t\nSELECT AN OPTION (Choose from 1-4): "))
         
         
