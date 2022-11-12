@@ -1,27 +1,27 @@
 
-Person1 = {"Name": "Bebs Reyes", 
+Person1 = {"FullName": "Bebs Reyes", 
             "Age": "19", 
             "Gender":"Female",
             "Number": "09283623123",
             "Email": "beverly@gmail.com",
-            "CityAddress": "Jalajala"}
-Person2 = {"Name": "Jay Park", 
+            "Address": "Jalajala"}
+Person2 = {"FullName": "Jay Park", 
             "Age": "20",
             "Gender":"Male","Number": "09123985458",
             "Email": "jaypark@gmail.com",
-            "CityAddress": "Seoul"}
-Person3 = {"Name": "Niki Rodriguez", 
+            "Address": "Seoul"}
+Person3 = {"FullName": "Niki Rodriguez", 
             "Age": "17", 
             "Gender":"Male",
             "Number": "09096937644",
             "Email": "nikirodriguez@gmail.com",
-            "CityAddress": "Tokyo"}
-Person4 = {"Name": "Jake Marcus",
+            "Address": "Tokyo"}
+Person4 = {"FullName": "Jake Marcus",
             "Age": "19", 
             "Gender":"Male",
             "Number": "09845321473",
             "Email": "jakemarcus@gmail.com",
-            "CityAddress": "Makati"}
+            "Address": "Makati"}
 Informations = []
 
 
@@ -52,9 +52,10 @@ while True:
         Name = (input("\n\tPLEASE ENTER YOUR FULL NAME:     "))
         Age = int(input("\tPLEASE ENTER YOUR AGE:            "))
         Gender = (input("\tPLEASE ENTER YOUR GENDER:         "))
-        Number = (int(input("\tPLEASE ENTER YOUR NUMBER:         ")))
+        PhoneNumber = (int(input("\tPLEASE ENTER YOUR NUMBER:         ")))
         CityAddress = (input("\tPLEASE ENTER YOU CITY ADDRESS:    "))
         print("\t>>>>> INFORMATIONS ARE SAVED! <<<<<")
+        person = {"Fullname": Name, "Age": Age, "Gender": Gender, "Address": CityAddress, "Number": PhoneNumber}
 
 
     elif Options == 2:
