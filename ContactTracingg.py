@@ -1,7 +1,15 @@
+
+Name = {}
+Age = {}
+Gender = {}
+Number = {}
+Email = {}
+CityAddress = {}
+
 def menu():
     print("""
             >>>>> WELCOME TO RODRIGUEZ`S PROGRAM <<<<<
-                _________________________________
+                 _________________________________
                 ||           MENU OPTIONS         ||
                 ||________________________________||  
                 ||                                ||
