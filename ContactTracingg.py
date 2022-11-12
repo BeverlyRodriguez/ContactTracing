@@ -53,7 +53,7 @@ while True:
         PhoneNumber = (int(input("\tPLEASE ENTER YOUR NUMBER:         ")))
         CityAddress = (input("\tPLEASE ENTER YOU CITY ADDRESS:    "))
         print("\t>>>>> INFORMATIONS ARE SAVED! <<<<<")
-        person = {"\nFullname": Name, "\nAge": Age, "\nGender": Gender, "\nAddress": CityAddress, "\nNumber": PhoneNumber}
+        person = {"\nFullname": Name + Age + Gender +PhoneNumber + CityAddress}
         print("This is the informations ", person)
         Informations.append(Person1)
 
@@ -63,7 +63,7 @@ while True:
 
     elif Options == 2:
         search = input("ENTER THE NAME YOU WANT TO SEARCH: ")
-        for i in range(len(Informations)):
+        for key in Informations:
             person = Informations[i]
             if person["Fullname"] == Name:
                 print("person [")
