@@ -1,13 +1,4 @@
-#Write a python program for contact tracing:
-# Display a menu of options
-# Allow user to select item in the menu.
-# Ask personal data for contact tracing. Use dictionary to store the info
-# Search, ask full name then display the record
-
-
-
-def menu(): 
-    print("""
+print("""
         >>>>> WELCOME TO RODRIGUEZ`S PROGRAM <<<<<
               _________________________________
             ||           MENU OPTIONS         ||
@@ -18,6 +9,3 @@ def menu():
             ||         3. EXIT                ||
             ||________________________________||
     """)
-
-def end():
-    print(">>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
