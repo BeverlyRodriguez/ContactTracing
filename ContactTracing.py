@@ -9,7 +9,7 @@ print("\t\t***BEVERLY ANN L. RODRIGUEZ***\n")
 # Search, ask full name then display the record
 
 
-
+fullname={}
 def menu(): 
     print("""
         >>>>> WELCOME TO RODRIGUEZ`S PROGRAM <<<<<
