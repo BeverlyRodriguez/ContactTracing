@@ -13,15 +13,18 @@ print("\t\t***BEVERLY ANN L. RODRIGUEZ***\n")
 def menu(): 
     print("""
         >>>>> WELCOME TO RODRIGUEZ`S PROGRAM <<<<<
-             _________________________________
-            |           MENU OPTIONS          |
-            |_________________________________|  
-            |                                 |
-            |         1. ADD AN ITEM          |
-            |         2. SEARCH               |
-            |         3. EXIT                 |
-            |_________________________________|
+              _________________________________
+            ||           MENU OPTIONS         ||
+            ||________________________________||  
+            ||                                ||
+            ||         1. ADD AN ITEM         ||
+            ||         2. SEARCH              ||
+            ||         3. EXIT                ||
+            ||________________________________||
     """)
+
+def end():
+    print(">>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
 
 Name = {}
 Age = {}
@@ -31,20 +34,17 @@ Email = {}
 CityAddress = {}
 
 
-def end():
-    print(">>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
-
 
 menu()
-option = int(input("\t\nSELECT AN OPTION (Choose from 1-3): "))
+Options = int(input("\t\nSELECT AN OPTION (Choose from 1-3): "))
 
 while option != 4:
     if option == 1:
-        print("Name: ")
+        print("PLEASE ENTER YOUR PERSONAL DATA:")
+        Name(input("Enter your first name: "))
 
-    elif option == 2:
-        print()
-    elif option == 10:
+
+    elif option == 3:
         exit = input("DO YOU WANT TO EXIT THE PROGRAM? (YES / NO)")
         if exit == "YES":
             break
