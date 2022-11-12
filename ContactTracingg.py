@@ -22,12 +22,22 @@ def menu():
 def end():
     print(">>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
 
-    Options = int(input("\t\nSELECT AN OPTION (Choose from 1-3): "))
-    while Options != 4:
-     if Options == 1:
+
+
+Options = int(input("\t\nSELECT AN OPTION (Choose from 1-3): "))
+
+
+while True:
+    if Options == 1:
         print("PLEASE ENTER YOUR PERSONAL DATA:")
-        Name.append(input("Enter your first name: "))
-        Age.append(int(input("Enter your last name: ")))
-        Gender.append(input("Enter your address: "))
-        Number.append(int(input("Enter your phone number: ")))
-        CityAddress.append(input("Enter your phone number: "))
+        Name = (input("PLEASE ENTER YOUR FIRST NAME: "))
+        Age = int(input("PLEASE ENTER YOUR AGE: "))
+        Gender = (input("PLEASE ENTER YOUR GENDER: "))
+        Number = (int(input("PLEASE ENTER YOUR NUMBER: ")))
+        CityAddress = (input("PLEASE ENTER YOU CITY ADDRESS: "))
+
+    elif Options == 2:
+        search = input("ENTER THE NAME YOU WANT TO SEARCH: ")
+        print("RESULTS:")
+        for i in range(len(Name)):
+        
