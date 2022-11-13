@@ -52,7 +52,7 @@ while True:
         print("\t\t\t>>>>> PLEASE ENTER YOUR PERSONAL DATA <<<<<")
         Name = (input("\n\tPLEASE ENTER YOUR FULL NAME:      "))
         Age = int(input("\tPLEASE ENTER YOUR AGE:            "))
-        Gender = (input("\tPLEASE ENTER YOUR GENDER:         "))
+        Gender = (input("\tPLEASE ENTER YOUR GENDER(F/M):     "))
         PhoneNumber = (int(input("\tPLEASE ENTER YOUR NUMBER:         ")))
         CityAddress = (input("\tPLEASE ENTER YOU CITY ADDRESS:    "))
         print("\t>>>>> INFORMATIONS ARE SAVED! <<<<<")
@@ -70,15 +70,15 @@ while True:
 
     elif Options == 3:   
         for i in range(len(Informations)):
-            print("\n\t\t\t>>>>> THESE ARE ALL THE INFORMATIONS <<<<<")
+            print("\n\t\t\t\t>>>>> THESE ARE THE INFORMATIONS <<<<<")
             print(Informations[i])
 
     elif Options == 4:
-        exit = input("DO YOU WANT TO EXIT THE PROGRAM? (YES / NO): ")
+        exit = input("\tDO YOU WANT TO EXIT THE PROGRAM? (YES / NO): ")
         if exit == "NO":
            menu()
         else:
-            print("\n>>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
+            print("\n\t\t>>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
             break
     menu()
     Options = int(input("\t\nSELECT AN OPTION (Choose from 1-4): "))
