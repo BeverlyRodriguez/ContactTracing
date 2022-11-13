@@ -1,5 +1,11 @@
-print("\n\t\t********PROGRAMMED BY:********")
-print("\t\t***BEVERLY ANN L. RODRIGUEZ***\n")
+print("\n\t\t ********PROGRAMMED BY:******** ")
+print("\t\t ***BEVERLY ANN L. RODRIGUEZ***\n ")
+
+# Write a python program for contact tracing:
+# Display a menu of options.
+# Allow user to select item in the menu.
+# Perform the selected options.
+# Use dictionary to store the info and the full name as key.
 
 Informations = []
 Person1 = {"FullName": "Bebs Reyes", 
@@ -28,20 +34,19 @@ Informations.append(Person3)
 Informations.append(Person4)
 def menu():
     print("""
-              >>>>> WELCOME TO RODRIGUEZ`S PROGRAM <<<<<
-                 _________________________________
-                ||          MENU OPTIONS          ||
-                ||________________________________||  
-                ||                                ||
-                ||        1. ADD AN ITEM          ||
-                ||        2. SEARCH INFORMATION   ||   
-                ||        3. VIEW INFORMATION     ||
-                ||        4. EXIT                 ||
-                ||________________________________||
+             >>>>> WELCOME TO RODRIGUEZ`S PROGRAM <<<<<
+                _________________________________
+              ||          MENU OPTIONS          ||
+              ||________________________________||  
+              ||                                ||
+              ||        1. ADD AN ITEM          ||
+              ||        2. SEARCH INFORMATION   ||   
+              ||        3. VIEW INFORMATION     ||
+              ||        4. EXIT                 ||
+              ||________________________________||
         """)
 def end():
     print(">>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
-
 
 menu()
 Options = int(input("\t\nSELECT AN OPTION (Choose from 1-4): "))
@@ -57,7 +62,7 @@ while True:
         CityAddress = (input("\tPLEASE ENTER YOU CITY ADDRESS:    "))
         print("\t>>>>> INFORMATIONS ARE SAVED! <<<<<")
         person = {"Name": Name, "A": Age, "G": Gender, "Add": CityAddress, "Num": PhoneNumber}
-        print("\tThese are the informations: \n\t", person)
+        print("\n\tThese are the informations: \n\t", person)
         
 
     elif Options == 2:
@@ -65,23 +70,24 @@ while True:
         for i in range(len(Informations)):
             person = Informations[i]
             if person['FullName'] == search:
-                print("\n\t\t\t>>>>> RESULTS <<<<<")
+                print("\n\t\t\t\t\t>>>>> RESULTS <<<<<")
                 print(person)
 
     elif Options == 3:   
         for i in range(len(Informations)):
-            print("\n\t\t\t\t>>>>> THESE ARE THE INFORMATIONS <<<<<")
+            print("\n\t\t\t\t\t>>>>> THESE ARE THE INFORMATIONS <<<<<")
             print(Informations[i])
 
     elif Options == 4:
         exit = input("\tDO YOU WANT TO EXIT THE PROGRAM? (YES / NO): ")
         if exit == "NO":
-           menu()
+            menu
         else:
             print("\n\t\t>>>>> THANK YOU FOR USING THIS PROGRAM! <<<<<")
             break
     menu()
     Options = int(input("\t\nSELECT AN OPTION (Choose from 1-4): "))
+    
 
         
         
