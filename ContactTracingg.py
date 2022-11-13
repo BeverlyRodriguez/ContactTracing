@@ -52,7 +52,7 @@ while True:
         print("\t\t\t>>>>> PLEASE ENTER YOUR PERSONAL DATA <<<<<")
         Name = (input("\n\tPLEASE ENTER YOUR FULL NAME:      "))
         Age = int(input("\tPLEASE ENTER YOUR AGE:            "))
-        Gender = (input("\tPLEASE ENTER YOUR GENDER(F/M):     "))
+        Gender = (input("\tPLEASE ENTER YOUR GENDER(F/M):    "))
         PhoneNumber = (int(input("\tPLEASE ENTER YOUR NUMBER:         ")))
         CityAddress = (input("\tPLEASE ENTER YOU CITY ADDRESS:    "))
         print("\t>>>>> INFORMATIONS ARE SAVED! <<<<<")
@@ -65,7 +65,7 @@ while True:
         for i in range(len(Informations)):
             person = Informations[i]
             if person['FullName'] == search:
-                print("\t\t\t\n>>>>> RESULTS <<<<<")
+                print("\n\t\t\t>>>>> RESULTS <<<<<")
                 print(person)
 
     elif Options == 3:   
